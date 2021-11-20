@@ -1,0 +1,36 @@
+{
+  "name": "algorithm-workbook",
+  "version": "1.0.0",
+  "description": "Jay's personal algorithm workbook for practice. Strictly intended for educational purposes. Do not use for commercial purposes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaymontojo/algorithm-workbook.git"
+  },
+  "keywords": [
+    "algorithm",
+    "computer",
+    "science",
+    "time",
+    "complexity",
+    "sort",
+    "functional",
+    "programming"
+  ],
+  "author": "Jay Montojo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaymontojo/algorithm-workbook/issues"
+  },
+  "homepage": "https://github.com/Jaymontojo/algorithm-workbook#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "standard-version": "^9.3.2"
+  }
+}
