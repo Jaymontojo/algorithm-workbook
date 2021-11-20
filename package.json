@@ -1,12 +1,11 @@
 {
   "name": "algorithm-workbook",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Jay's personal algorithm workbook for practice. Strictly intended for educational purposes. Do not use for commercial purposes.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "release": "standard-version"
-    
   },
   "repository": {
     "type": "git",
