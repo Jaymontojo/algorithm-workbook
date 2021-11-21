@@ -8,7 +8,7 @@ class MaxHeap {
   }
 
   findRoot(){
-    //IMPLEMENT
+    return this.heapedArray[0];
   }
 
   insert(value) {
