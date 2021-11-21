@@ -1,9 +1,10 @@
 class MaxHeap {
   constructor(unsortedArr) {
-    this.heap = buildMaxHeap(unsortedArr);
+    this.heapedArray = buildMaxHeap(unsortedArr);
   }
+
   buildMaxHeap(arr){
-    //IMPLEMENT
+    return unsortedArr
   }
 
   findRoot(){
@@ -27,4 +28,4 @@ class MaxHeap {
   }
 }
 
-module.exports = { MaxHeap }
+module.exports = MaxHeap

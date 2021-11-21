@@ -1,7 +1,8 @@
 class MinHeap {
   constructor(unsortedArr) {
-    this.heap = buildMinHeap(unsortedArr);
+    this.heapedArray = buildMinHeap(unsortedArr);
   }
+
   buildMinHeap(arr){
     //IMPLEMENT
   }
@@ -27,4 +28,4 @@ class MinHeap {
   }
 }
 
-module.exports = { MinHeap }
+module.exports = MinHeap
