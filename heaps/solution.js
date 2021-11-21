@@ -1,9 +1,13 @@
 class MaxHeap {
-  constructor(unsortedArr) {
-    this.heap = buildMaxHeap(unsortedArr);
+  constructor(unHeapedArray) {
+    this.heapedArray = buildMaxHeap(unHeapedArray);
   }
   buildMaxHeap(arr){
-    //IMPLEMENT
+    /* 
+     should only run once
+     should implement heapify
+     should build a minheap
+    */
   }
 
   findRoot(){
@@ -18,8 +22,26 @@ class MaxHeap {
     //IMPLEMENT
   }
 
-  heapify(){
-    //IMPLEMENT
+  heapify(array, arrLength, rootIndex){
+    let largest = rootIndex;
+    let leftChild = 2 * rootIndex + 1;
+    let rightChild = 2 * rootIndex + 2;
+
+    if(leftChild < arrLength && array[leftChild] > array[largest]){
+      largest = leftChild;
+    }
+
+    if(rightChild < arrLength && array[rightChild] > largest) {
+      largest = rightChild
+    }
+
+    if (largest != rootIndex){
+      let tempCache = array[rootIndex];
+      array[rootIndex] = array[largest];
+      array[largest] = tempCache;
+
+      this.heapify(array, n, largest)
+    }
   }
 
   sort(){
@@ -28,8 +50,8 @@ class MaxHeap {
 }
 
 class MinHeap {
-  constructor(unsortedArr) {
-    this.heap = buildMinHeap(unsortedArr);
+  constructor(unHeapedArray) {
+    this.heapedArray = buildMaxHeap(unHeapedArray);
   }
   buildMinHeap(arr){
     //IMPLEMENT
@@ -47,7 +69,7 @@ class MinHeap {
     //IMPLEMENT
   }
 
-  heapify(){
+  heapify(unHeapedArray, ){
     //IMPLEMENT
   }
 
